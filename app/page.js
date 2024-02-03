@@ -1,23 +1,16 @@
+"use client";
+// Global Imports
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <main>
-      <html lang="en">
-        <head>
-          <title>Keeper App</title>
-          <link
-            href="https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap"
-            rel="stylesheet"
-          />
-          <link rel="stylesheet" href="styles.css" />
-        </head>
+// Local Imports
+import App from './components/App';
+import Footer from './components/Footer';
 
-        <body>
-          <div id="root"></div>
-          <script src="../src/index.js" type="text/jsx"></script>
-        </body>
-      </html>
-    </main>
+const year = new Date().getFullYear();
+
+export default function Home() {
+
+  return (
+    <App />
   );
 }
