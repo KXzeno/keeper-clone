@@ -15,7 +15,12 @@ export default function RootLayout({ children }) {
         href="https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap"
         rel="stylesheet"
       />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="header">
+          <h1 className="header-plus">Keeper</h1>
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
