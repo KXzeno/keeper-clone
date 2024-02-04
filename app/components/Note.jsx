@@ -1,8 +1,9 @@
-export default function Note() {
+"use client";
+export default function Note(Note) {
     return(
         <div className="note">
-            <h1>This is the note title</h1>
-            <p>This is the note content</p>
+            <h1>{Note.title}</h1>
+            <p>{Note.content}</p>
         </div>
     );
 }
