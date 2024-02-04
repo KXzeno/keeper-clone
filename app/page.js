@@ -1,4 +1,3 @@
-"use client";
 // Global Imports
 import Image from "next/image";
 
