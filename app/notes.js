@@ -1,4 +1,4 @@
-const notes = [
+export default const Notes = [
   {
     key: 1,
     title: "Delegation",
