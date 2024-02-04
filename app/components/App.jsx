@@ -14,7 +14,7 @@ export default function App() {
     let [nid, setNid] = useState(Number(0));
 
     let addItem = (item) => {
-        setNid(++nid); // Postfix returns original value before increment
+        setNid(nid + 1); // Postfix returns original value before increment
         item.nid = nid;
         setItems(old => [...old, item]);
     }
@@ -24,7 +24,6 @@ export default function App() {
         setItems(old => old.filter(({nid}) => nid != sid));
         console.log(sid, nid);
     }
-
 
     return (
         <div>
