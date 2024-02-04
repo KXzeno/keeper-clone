@@ -1,4 +1,6 @@
-export default const Notes = [
+// Cannot do export default notes, cannot do function either since it returns an object
+
+const Notes = [
   {
     key: 1,
     title: "Delegation",
@@ -24,3 +26,5 @@ export default const Notes = [
       "What's the difference between hardware and software? You can hit your hardware with a hammer, but you can only curse at your software."
   }
 ];
+
+export default Notes;
