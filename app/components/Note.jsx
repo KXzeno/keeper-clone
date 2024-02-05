@@ -1,12 +1,12 @@
 "use client";
 import { useState } from 'react';
 
-export default function Note(Note) {
+export default function Note({ title, content, id, onClicked }) {
     return(
         <div className="note">
-            <h1>{Note.title}</h1>
-            <p>{Note.content}</p>
-            <button id={Note.id} onClick={Note.onClicked}>DELETE</button>
+            <h1>{title}</h1>
+            <p>{content}</p>
+            <button id={id} onClick={onClicked}>DELETE</button>
         </div>
     );
 }
