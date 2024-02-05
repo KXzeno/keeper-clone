@@ -30,13 +30,13 @@ export default function App() {
             <CreateArea 
                 onAdd={addItem}
             />
-            {items.map((item, index) => { 
+            {items.map(({ nid, title, content }, index) => { 
                 return(
                     <Note
                         key={index}
-                        id={item.nid}
-                        title={item.title}
-                        content={item.content}
+                        id={nid}
+                        title={title}
+                        content={content}
                         onClicked={delNote}
                     />
                 )
