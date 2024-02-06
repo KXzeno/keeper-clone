@@ -1,17 +1,15 @@
 "use client";
-import { useState } from 'react';
 import Footer from './Footer';
 import Note from './Note';
 import '../globals.css';
 import Notes from '../notes.js';
 import CreateArea from './CreateArea';
 
-
 export default function App() {
-    let [items, setItems] = useState([]);
+    let [items, setItems] = React.useState([]);
 
     // To catch nid in lower scopes, cannot simply declare
-    let [nid, setNid] = useState(Number(0));
+    let [nid, setNid] = React.useState(Number(0));
 
     let addItem = (item) => {
         setNid(nid + 1); // Postfix returns original value before increment

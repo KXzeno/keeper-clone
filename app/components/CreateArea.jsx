@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
 function CreateArea(newNote) {
-  const [note, setNote] = useState({});
+  const [note, setNote] = React.useState({});
   
   let handleChange = (event) => {
     let { name, value } = event.target;
